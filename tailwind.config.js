@@ -6,7 +6,11 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
   },
-  plugins: [],
+  extend:{
+    colors: {
+    lightCard:"rgb(45 47 50 / 88%)"
+  }
+  },
+  plugins: [require("tailwind-scrollbar-hide")],
 }

@@ -1,3 +1,58 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .button {
+    @apply h-5 w-5 hover:scale-125 cursor-pointer transition transform duration-100 ease-in;
+  }
+}
+
+.circle {
+  @apply bg-gray-900 mx-auto  flex items-center justify-center rounded-full h-8 w-8 cursor-pointer hidden md:flex;
+}
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.2s ease-in;
+  position: relative;
+  margin-left: 15px;
+}
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: white;
+  transform: rotate(0);
+}
+.hamburger-middle {
+  transform: translateY(7px);
+}
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+.blackish {
+  background-color: #0d0d10;
+}
+.custom-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
+  grid-auto-rows: 200px;
+  column-gap: 20px;
+  row-gap: 10px;
+}
+.blackish-card {
+  background-color: #17171ea1;
+}
+
+.blackish-card-2 {
+  background-color: #322e2eb0;
+}
+/* .nav__color {
+  background-color: yellow;
+} */
